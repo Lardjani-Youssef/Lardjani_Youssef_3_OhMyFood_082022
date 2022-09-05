@@ -1,8 +1,10 @@
+@import"../utils/ombre.scss";
 header
 {
     font-family: "Shrikhand", cursive;
     text-align: center;
-    box-shadow: 0px 3px 3px grey;
+    /*box-shadow: 0px 3px 3px grey;*/
+    @include ombre-base;
     padding: 0.5rem;
     position:relative;
 }

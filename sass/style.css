@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
+@import "/sass/layout/villesearch.css";
 * {
   box-sizing: border-box;
 }
@@ -9,10 +10,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/*main
+{
+    /*padding: 10px;*/
 header {
   font-family: "Shrikhand", cursive;
   text-align: center;
-  box-shadow: 0px 3px 3px grey;
+  /*box-shadow: 0px 3px 3px grey;*/
+  box-shadow: 10px 5px 5px gray;
   padding: 0.5rem;
   position: relative;
 }
@@ -31,7 +36,7 @@ main .rechercheville {
   text-align: center;
 }
 .explore button {
-  margin-top: 3px;
+  margin-top: 10px;
   color: white;
   text-align: center;
   font-weight: 300;
@@ -39,9 +44,51 @@ main .rechercheville {
   border: none;
   background-image: linear-gradient(45deg, #9356DC, #FF79DA);
   border-radius: 20px;
-  box-shadow: 10px 5px 5px gray;
   transition: transform 200ms; /*zoom transition de 200ms pour effet*/
+  /*box-shadow: 10px 5px 5px gray;*/
+  box-shadow: 10px 5px 5px gray;
 }
 .explore button:hover {
   transform: scale(1.03); /*zoom de la souris*/
+}
+
+.fonctionnement ol {
+  counter-reset: liste-critere; /*conteur*/
+  display: flex;
+  gap: 2rem;
+}
+@media (max-width: 1200px) {
+  .fonctionnement ol {
+    flex-direction: column;
+  }
+}
+.fonctionnement li {
+  position: relative;
+  list-style-type: none;
+  background-color: #f6f6f6;
+  padding: 1.5rem 2rem;
+  flex-grow: 1; /* prendre toute la place*/
+  border-radius: 1rem;
+  box-shadow: 10px 5px 5px gray;
+}
+.fonctionnement li::before {
+  content: counter(liste-critere);
+  counter-increment: liste-critere; /* appel du conteur*/
+  color: #f6f6f6;
+  background-color: purple;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  bottom: 1.2rem;
+  left: -1rem;
+}
+.fonctionnement li:hover {
+  transform: scale(1.02);
+}
+.fonctionnement li i.fas {
+  color: gray;
+  margin-right: 1rem;
 }/*# sourceMappingURL=style.css.map */
