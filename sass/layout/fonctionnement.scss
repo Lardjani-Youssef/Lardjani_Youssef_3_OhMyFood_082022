@@ -1,5 +1,6 @@
 @import"../utils/ombre.scss";
 @import"../utils/zoom.scss";
+@import"../utils/variable-couleurs.scss";
 .fonctionnement
 {
     & ol
@@ -21,15 +22,16 @@
             content:counter(liste-critere);
             counter-increment: liste-critere;/* appel du conteur*/
             color: #f6f6f6;
-            background-color: purple;
+            background-color: $couleur-primaire;
             border-radius: 50%;
             width: 2rem;
             height: 2rem;
             display: grid;
             place-items: center;
             position: absolute;
-            bottom: 1.2rem;
+            bottom:50%;
             left: -1rem;
+            transform: translateY(50%);
 
 
 
@@ -47,15 +49,21 @@
         &:hover
         {
             @include zoom-leger;
+            /*&:hover
+            {
+                cursor: pointer;
+                color: $couleur-primaire;
+            }*/
         }
 
         & i.fas
         {
             color:gray;
             margin-right: 1rem;
-
+           
         }
         
+
 
     }
         

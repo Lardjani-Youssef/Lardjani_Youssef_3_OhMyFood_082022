@@ -21,18 +21,24 @@
   content: counter(liste-critere);
   counter-increment: liste-critere; /* appel du conteur*/
   color: #f6f6f6;
-  background-color: purple;
+  background-color: #9356DC;
   border-radius: 50%;
   width: 2rem;
   height: 2rem;
   display: grid;
   place-items: center;
   position: absolute;
-  bottom: 1.2rem;
+  bottom: 50%;
   left: -1rem;
+  transform: translateY(50%);
 }
 .fonctionnement li:hover {
   transform: scale(1.02);
+  /*&:hover
+  {
+      cursor: pointer;
+      color: $couleur-primaire;
+  }*/
 }
 .fonctionnement li i.fas {
   color: gray;

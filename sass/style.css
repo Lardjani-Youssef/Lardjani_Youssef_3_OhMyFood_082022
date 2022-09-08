@@ -75,20 +75,76 @@ main .rechercheville {
   content: counter(liste-critere);
   counter-increment: liste-critere; /* appel du conteur*/
   color: #f6f6f6;
-  background-color: purple;
+  background-color: #9356DC;
   border-radius: 50%;
   width: 2rem;
   height: 2rem;
   display: grid;
   place-items: center;
   position: absolute;
-  bottom: 1.2rem;
+  bottom: 50%;
   left: -1rem;
+  transform: translateY(50%);
 }
 .fonctionnement li:hover {
   transform: scale(1.02);
+  /*&:hover
+  {
+      cursor: pointer;
+      color: $couleur-primaire;
+  }*/
 }
 .fonctionnement li i.fas {
   color: gray;
   margin-right: 1rem;
+}
+
+.menu {
+  background-color: white;
+  border-radius: 1rem 1rem;
+}
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+.menu .menu__carte {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /*flex-wrap: wrap;/*va a la ligne*/
+  gap: 2rem;
+}
+@media (max-width: 1200px) {
+  .menu .menu__carte {
+    /*flex-direction: column;*/
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.menu .carte {
+  border: 1px solid black;
+  border-radius: 1rem;
+  background-color: #f6f6f6;
+  box-shadow: 10px 5px 5px gray;
+}
+.menu .image__carte {
+  height: 18rem;
+  background-size: cover;
+  border-radius: 1rem;
+  /*background-image: url(../OhMyFoodImage/resto-1.jpg);*/
+}
+.menu .image__carte-1 {
+  background-image: url(../OhMyFoodImage/resto-1.jpg);
+}
+.menu .image__carte-2 {
+  background-image: url(../OhMyFoodImage/resto-2.jpg);
+}
+.menu .image__carte-3 {
+  background-image: url(../OhMyFoodImage/resto-3.jpg);
+}
+.menu .image__carte-4 {
+  background-image: url(../OhMyFoodImage/resto-4.jpg);
+}
+
+.description__image {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */

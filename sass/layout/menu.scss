@@ -1,0 +1,53 @@
+@import"../utils/ombre.scss";
+
+.menu
+{
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    background-color:white;
+    border-radius: 1rem 1rem;
+
+    .menu__carte
+    {
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        /*flex-wrap: wrap;/*va a la ligne*/
+        gap: 2rem;
+        @media (max-width:1200px)
+        {
+            /*flex-direction: column;*/
+            grid-template-columns:repeat(1, 1fr);
+        }
+    }   
+    
+    .carte
+    {
+        border: 1px solid black; 
+        border-radius: 1rem;
+        background-color: #f6f6f6;
+        @include ombre-base;        
+    } 
+    & .image__carte
+    {          
+        height: 18rem;
+        background-size: cover;
+        
+        border-radius: 1rem;
+        /*background-image: url(../OhMyFoodImage/resto-1.jpg);*/
+                
+    }  
+    @for $i from 1 through 4
+    {
+        .image__carte-#{$i}
+        {
+            background-image: url(../OhMyFoodImage/resto-#{$i}.jpg);
+        }
+    }                        
+}
+.description__image
+{
+    display: flex;
+    justify-content: space-between;
+}
