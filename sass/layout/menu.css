@@ -1,6 +1,7 @@
 .menu {
   background-color: white;
   border-radius: 1rem 1rem;
+  margin: 2rem;
 }
 .menu a {
   text-decoration: none;
@@ -36,7 +37,6 @@
   top: 1rem;
 }
 .menu .carte {
-  border: 1px solid black;
   border-radius: 1rem;
   background-color: #f6f6f6;
   box-shadow: 10px 5px 5px gray;
@@ -44,7 +44,7 @@
 .menu .image__carte {
   height: 18rem;
   background-size: cover;
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
   /*background-image: url(../OhMyFoodImage/resto-1.jpg);*/
 }
 .menu .image__carte-1 {
@@ -59,8 +59,18 @@
 .menu .image__carte-4 {
   background-image: url(../OhMyFoodImage/resto-4.jpg);
 }
-
-.description__image {
-  display: flex;
-  justify-content: space-between;
+.menu .description__image {
+  position: relative;
+}
+.menu .description__image i {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menu .description__image .fas {
+  color: transparent;
+  background-image: linear-gradient(red, blue);
+  background-clip: text;
+  -webkit-background-clip: text;
 }/*# sourceMappingURL=menu.css.map */
