@@ -1,4 +1,5 @@
 @import"../utils/ombre.scss";
+@import"../utils/variable-couleurs.scss";
 
 .menu
 {
@@ -19,6 +20,29 @@
         {
             /*flex-direction: column;*/
             grid-template-columns:repeat(1, 1fr);
+        }
+
+        .nouveau
+        {
+            
+            position: relative;
+        }
+
+        .nouveau::before
+        {
+            content: "Nouveau";
+            position: absolute;
+            color: darken($color: $couleur-terciaire, $amount: 50%);
+            border-radius: 5px;
+            background-color: $couleur-terciaire;
+            width: 7rem;
+            height: 3rem;
+            size: 50%;
+            display: grid;/*centrer horizontal et vertical*/
+            place-items: center;
+            right: 1rem;
+            top: 1rem;
+            
         }
     }   
     
