@@ -1,1 +1,24 @@
-/*# sourceMappingURL=animation.css.map */
+@-webkit-keyframes animation-card {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+    transition: all 2s;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all 2s;
+  }
+}
+@keyframes animation-card {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+    transition: all 2s;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all 2s;
+  }
+}/*# sourceMappingURL=animation.css.map */

@@ -2,7 +2,24 @@
 @import"../utils/ombre.scss";
 @import"../utils/animation.scss";
 
+.Header-secondes-page
+{
+    position: relative;
+    i
+    {
+        top: 5px;
+        left: 28px;
+        position: absolute;
+        
+        &:hover
+        {
+            transform: scale(1.03); /*zoom de la souris*/
+        }
+        color: black;
 
+    }
+
+}
 .imageprincipal img
 {
     display: block;
@@ -28,6 +45,7 @@
         font-family: "Shrikhand", "sans-serif";
     
     }
+    
     i
     {
         padding-top: 2rem;
@@ -59,6 +77,24 @@
 {
     padding: 2rem;
     background-color: #f6f6f6;
+    h3
+    {
+        text-transform: uppercase;
+        font-weight: 400;
+        position: relative;
+        
+
+        &::after
+        {
+            position: absolute;
+            top: 1.6rem;
+            left: 0rem;
+            content: "";
+            height: 0.25rem;
+            width: 3.25rem;
+            background-color: $couleur-terciaire;
+        }
+    }
     .carte_x9
     {
         
@@ -73,9 +109,26 @@
         }
         .typemenu
         {
+           
+            
+            .Card_body2
+            {
+                overflow: hidden;
+                white-space:nowrap;
+                text-overflow: ellipsis;
+            }
             .card_2
             {
-
+                /*******************animation pour que les cartes apparaissent a des temps differement decaller*************************/
+                @for $i from 1 through 4
+                {
+                    &:nth-child(#{$i})
+                    {
+                        animation-delay: 100ms *$i;
+                    }
+                }
+                /*****************************************************/
+                cursor: pointer;
                 padding-left: 1rem;
                 border-radius: 1rem;
                 overflow: hidden;
@@ -85,6 +138,7 @@
                 @include ombre-base2;  
                 display: flex;
                 justify-content: space-between;
+                animation: animation-card 1.5s;
                 
                 /*justify-content: space-between;*/
                 .Card_prix
@@ -119,7 +173,7 @@
                 .lotprice-val
                 {
 
-                   
+                    flex-shrink: 0;
                     display: flex;
                     flex-direction: row;
                     margin-right: -4rem;

@@ -1,3 +1,32 @@
+@-webkit-keyframes animation-card {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes animation-card {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.Header-secondes-page {
+  position: relative;
+}
+.Header-secondes-page i {
+  top: 5px;
+  left: 28px;
+  position: absolute;
+  color: black;
+}
+.Header-secondes-page i:hover {
+  transform: scale(1.03); /*zoom de la souris*/
+}
+
 .imageprincipal img {
   display: block;
   width: 100%;
@@ -44,6 +73,20 @@
   padding: 2rem;
   background-color: #f6f6f6;
 }
+.main_typemenu h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+}
+.main_typemenu h3::after {
+  position: absolute;
+  top: 1.6rem;
+  left: 0rem;
+  content: "";
+  height: 0.25rem;
+  width: 3.25rem;
+  background-color: #99E2D0;
+}
 .main_typemenu .carte_x9 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -55,7 +98,15 @@
     flex-direction: column;
   }
 }
+.main_typemenu .carte_x9 .typemenu .Card_body2 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 .main_typemenu .carte_x9 .typemenu .card_2 {
+  /*******************animation pour que les cartes apparaissent a des temps differement decaller*************************/
+  /*****************************************************/
+  cursor: pointer;
   padding-left: 1rem;
   border-radius: 1rem;
   overflow: hidden;
@@ -65,7 +116,25 @@
   box-shadow: 5px 5px 5px 5px gray;
   display: flex;
   justify-content: space-between;
+  -webkit-animation: animation-card 1.5s;
+          animation: animation-card 1.5s;
   /*justify-content: space-between;*/
+}
+.main_typemenu .carte_x9 .typemenu .card_2:nth-child(1) {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+.main_typemenu .carte_x9 .typemenu .card_2:nth-child(2) {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+.main_typemenu .carte_x9 .typemenu .card_2:nth-child(3) {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+.main_typemenu .carte_x9 .typemenu .card_2:nth-child(4) {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
 }
 .main_typemenu .carte_x9 .typemenu .card_2 .Card_prix {
   font-weight: 900; /*en gras*/
@@ -89,6 +158,7 @@
   border-radius: 50%;
 }
 .main_typemenu .carte_x9 .typemenu .card_2 .lotprice-val {
+  flex-shrink: 0;
   display: flex;
   flex-direction: row;
   margin-right: -4rem;

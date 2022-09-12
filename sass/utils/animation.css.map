@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"animation.css"}
+{"version":3,"sources":["animation.scss","animation.css"],"names":[],"mappings":"AAiBA;EAEI;IAEI,0BAAA;IAEA,UAAA;IACA,kBAAA;ECnBN;EDuBE;IAEI,yBAAA;IACA,UAAA;IACA,kBAAA;ECtBN;AACF;ADMA;EAEI;IAEI,0BAAA;IAEA,UAAA;IACA,kBAAA;ECnBN;EDuBE;IAEI,yBAAA;IACA,UAAA;IACA,kBAAA;ECtBN;AACF","file":"animation.css"}
