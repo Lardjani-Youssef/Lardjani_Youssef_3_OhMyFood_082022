@@ -2,3 +2,8 @@
  {
     box-shadow: 10px 5px 5px gray;
 }
+
+@mixin ombre-base2
+ {
+    box-shadow: 5px 5px 5px 5px gray;
+}

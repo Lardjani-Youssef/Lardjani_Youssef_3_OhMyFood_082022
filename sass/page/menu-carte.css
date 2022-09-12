@@ -1,4 +1,5 @@
 .imageprincipal img {
+  display: block;
   width: 100%;
   height: 40vh;
   -o-object-fit: cover;
@@ -8,15 +9,21 @@
 }
 
 .menu-one {
+  background-color: #f6f6f6;
+  border-radius: 2rem 2rem 0 0;
+  margin-top: -3rem;
   position: relative;
 }
 .menu-one h2 {
+  padding-left: 2rem;
+  padding-top: 2rem;
   font-family: "Shrikhand", "sans-serif";
 }
 .menu-one i {
+  padding-top: 2rem;
   position: absolute;
   right: 1rem;
-  top: 97%;
+  top: 50%;
   padding-right: 2rem;
   transform: translateY(-50%);
 }
@@ -31,4 +38,83 @@
 .menu-one:hover .fas {
   opacity: 1;
   transform: translateY(-50%) scale(1.1);
+}
+
+.main_typemenu {
+  padding: 2rem;
+  background-color: #f6f6f6;
+}
+.main_typemenu .carte_x9 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+@media (max-width: 1000px) {
+  .main_typemenu .carte_x9 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.main_typemenu .carte_x9 .typemenu .card_2 {
+  padding-left: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  color: black;
+  margin-bottom: 10px;
+  background-color: white;
+  box-shadow: 5px 5px 5px 5px gray;
+  display: flex;
+  justify-content: space-between;
+  /*justify-content: space-between;*/
+}
+.main_typemenu .carte_x9 .typemenu .card_2 .Card_prix {
+  font-weight: 900; /*en gras*/
+  padding: 1rem;
+  display: flex;
+}
+.main_typemenu .carte_x9 .typemenu .card_2 .valide {
+  display: grid;
+  place-items: center;
+  border-radius: 0 1rem 1rem 0;
+  width: 4rem;
+  background-color: #99E2D0;
+}
+.main_typemenu .carte_x9 .typemenu .card_2 .valide .fas {
+  background-color: white;
+  display: grid;
+  place-items: center;
+  color: #99E2D0;
+  aspect-ratio: 1;
+  width: 2rem;
+  border-radius: 50%;
+}
+.main_typemenu .carte_x9 .typemenu .card_2 .lotprice-val {
+  display: flex;
+  flex-direction: row;
+  margin-right: -4rem;
+}
+.main_typemenu .carte_x9 .typemenu .card_2:hover .lotprice-val {
+  margin-right: 0;
+  transition: all 1s;
+}
+.main_typemenu .carte_x9 .typemenu .card_2:hover .lotprice-val i {
+  /*etat du i */
+  -webkit-animation: tour-du-valide 1s ease-in-out;
+          animation: tour-du-valide 1s ease-in-out; /* appel de l animation en changeant l etat du i*/
+}
+@-webkit-keyframes tour-du-valide {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes tour-du-valide {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }/*# sourceMappingURL=menu-carte.css.map */
