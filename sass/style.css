@@ -398,4 +398,8 @@ footer a {
   100% {
     transform: rotate(0);
   }
+}
+
+.loader {
+  background-color: transparent;
 }/*# sourceMappingURL=style.css.map */
