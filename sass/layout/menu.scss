@@ -1,18 +1,14 @@
 @import"../utils/ombre.scss";
 @import"../utils/variable-couleurs.scss";
-
 .menu
 {
-    background-color: $c-gris-claire;
-    
-    padding: 1rem;
-    padding-bottom: 6rem;
-
+    background-color: $c-gris-claire;   
+    padding: 2rem;
+    padding-bottom: 4rem;
     h2
     {
         font-size: 25px;
-    }
-    
+    }   
     a{
         text-decoration: none;
         color: black;
@@ -29,13 +25,10 @@
             /*flex-direction: column;*/
             grid-template-columns:repeat(1, 1fr);
         }
-
         .nouveau
-        {
-            
+        {           
             position: relative;
         }
-
         .nouveau::before
         {
             content: "Nouveau";
@@ -49,14 +42,11 @@
             display: grid;/*centrer horizontal et vertical*/
             place-items: center;
             right: 1rem;
-            top: 1rem;
-            
+            top: 1rem;           
         }
-    }   
-    
+    }       
     .carte
-    {
-        
+    {       
         border-radius: 1rem;
         background-color: white;
         @include ombre-base;        
@@ -67,8 +57,7 @@
         background-size: cover;
         
         border-radius: 1rem 1rem 0 0;
-        /*background-image: url(../OhMyFoodImage/resto-1.jpg);*/
-                
+        /*background-image: url(../OhMyFoodImage/resto-1.jpg);*/               
     }  
     @for $i from 1 through 4
     {
@@ -78,8 +67,7 @@
         }
     }     
     .description__image
-    {
-        
+    {        
         background-color: white;
         position: relative;
         i
@@ -98,12 +86,10 @@
             opacity: 0;
             transition: all 250ms;
         }
-
         &:hover .fas
         {
             opacity: 1;
-            transform: translateY(-50%) scale(1.1);
-            
+            transform: translateY(-50%) scale(1.1);           
         }
     }   
     .txt-img

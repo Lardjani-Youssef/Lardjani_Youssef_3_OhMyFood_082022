@@ -11,21 +11,16 @@
         {
             transform: rotate(0);
         }
-    }
-    
+    }   
 }
-
 @keyframes animation-card
 {
     0%
     {
-        transform: translateY(50%);
-        
+        transform: translateY(50%);       
         opacity: 0;
         transition: all 2s;
-
     }
-
     100%
     {
         transform: translateY(0%);
@@ -33,7 +28,6 @@
         transition: all 2s;
     }
 }
-
 @keyframes loader
 {
     0%
@@ -43,6 +37,5 @@
     100% 
     {
         transform: scale(0);
-    }
-    
+    } 
 }

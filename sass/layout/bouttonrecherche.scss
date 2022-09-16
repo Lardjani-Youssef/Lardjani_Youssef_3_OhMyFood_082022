@@ -1,9 +1,7 @@
 @import"../utils/ombre.scss";
 @import"../utils/variable-couleurs.scss";
-
 .explore
-{
-   
+{  
     h2
     {
         padding-top: 30px;
@@ -14,12 +12,10 @@
         padding-right: 30px;
     }
     border: solid 1px transparent;
-    height: 350px;
+    height: 200px;
     font-size: 1.2rem;
-    text-align: center;
-    
+    text-align: center;   
     background-color: $c-gris-claire;
-
     & button
     {
         margin-top: 1.8rem;
@@ -31,17 +27,14 @@
         font-size: 1.4rem;
         border: none;
         background-image: linear-gradient(45deg, #9356DC, #FF79DA);
-        border-radius: 30px;
-       
+        border-radius: 30px;      
         transition: transform 200ms; /*zoom transition de 200ms pour effet*/
          /*box-shadow: 10px 5px 5px gray;*/
         @include ombre-base;
-
         &:hover
         {
             transform: scale(1.03); /*zoom de la souris*/
         }
-    }   
-    
+    }       
 }
 

@@ -1,6 +1,5 @@
 @import"../utils/animation.scss";
 @import"../utils/variable-couleurs.scss";
-
 .page-rechargement
 {
     display: grid;
@@ -12,10 +11,8 @@
     left: 0;*/
     inset: 0;/* a la palce des 4 position value*/
     z-index: 1;/*superposition de cette page au dessus des autres*/
-
     background-color: white;
     opacity: 0.7;
-
     animation: loader 1s; /*animation de 3 secondes*/
     animation-delay: 2s;
     animation-fill-mode: forwards; /*pour que la page reste a son etat 

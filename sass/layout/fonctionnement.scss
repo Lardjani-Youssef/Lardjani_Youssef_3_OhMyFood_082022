@@ -1,18 +1,13 @@
 @import"../utils/ombre.scss";
 @import"../utils/zoom.scss";
 @import"../utils/variable-couleurs.scss";
-
 .fonctionnement
 {
     h2
     {
-       
         font-size: 25px;
-        
-        
-        padding-top: 3rem;
+        padding-top: 5rem;
         padding-left: 30px;
-        padding-bottom: 0px;
     }
     & ol
     {
@@ -28,7 +23,6 @@
             flex-direction: column;
         }
     }
-
     & li{
         position: relative;
         &::before/* before du conteur*/
@@ -46,20 +40,13 @@
             bottom:50%;
             left: -1rem;
             transform: translateY(50%);
-
-
-
         }
         list-style-type: none;
         background-color: #f6f6f6;
-        padding: 40px;
-       
+        padding: 40px;      
         flex-grow: 1; /* prendre toute la place*/
-        border-radius: 1.5rem;
-
-        
+        border-radius: 1.5rem;     
         @include ombre-base;
-
         &:hover
         {
             @include zoom-leger;
@@ -74,15 +61,10 @@
                           
             }
         }
-
         & i.fas
         {
             color:gray;
             margin-right: 1rem;          
         }
-        
-
-
-    }
-        
+    }       
 }
