@@ -1,20 +1,31 @@
 .explore {
-  margin-top: 10px;
-  font-size: 1rem;
+  border: solid 1px transparent;
+  height: 350px;
+  font-size: 1.2rem;
   text-align: center;
+  background-color: #f6f6f6;
+}
+.explore h2 {
+  padding-top: 30px;
+}
+.explore p {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .explore button {
-  margin-top: 10px;
+  margin-top: 1.8rem;
+  margin-bottom: 3rem;
+  padding: 19px;
   color: white;
   text-align: center;
-  font-weight: 300;
-  font-size: 1.5rem;
+  font-weight: 450;
+  font-size: 1.4rem;
   border: none;
   background-image: linear-gradient(45deg, #9356DC, #FF79DA);
-  border-radius: 20px;
+  border-radius: 30px;
   transition: transform 200ms; /*zoom transition de 200ms pour effet*/
   /*box-shadow: 10px 5px 5px gray;*/
-  box-shadow: 10px 5px 5px gray;
+  box-shadow: 0px 4px 5px 4px lightgrey;
 }
 .explore button:hover {
   transform: scale(1.03); /*zoom de la souris*/

@@ -3,18 +3,25 @@
 
 .menu
 {
+    background-color: $c-gris-claire;
+    
+    padding: 1rem;
+    padding-bottom: 6rem;
+
+    h2
+    {
+        font-size: 25px;
+    }
+    
     a{
         text-decoration: none;
         color: black;
     }
-    background-color:white;
-    border-radius: 1rem 1rem;
-    margin: 2rem;
-
     .menu__carte
     {
         display: grid;
         grid-template-columns:repeat(2, 1fr);
+        background-color: $c-gris-claire;
         /*flex-wrap: wrap;/*va a la ligne*/
         gap: 2rem;
         @media (max-width:1200px)
@@ -51,7 +58,7 @@
     {
         
         border-radius: 1rem;
-        background-color: #f6f6f6;
+        background-color: white;
         @include ombre-base;        
     } 
     & .image__carte
@@ -72,6 +79,8 @@
     }     
     .description__image
     {
+        
+        background-color: white;
         position: relative;
         i
         {
@@ -96,5 +105,10 @@
             transform: translateY(-50%) scale(1.1);
             
         }
-    }                   
+    }   
+    .txt-img
+    {
+        padding-left: 18px;
+        
+    }                
 }

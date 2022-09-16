@@ -4,7 +4,9 @@
 
 .Header-secondes-page
 {
+    
     position: relative;
+    text-align: center;
     i
     {
         top: 5px;
@@ -180,9 +182,7 @@
                     
                 }
                 &:hover .lotprice-val
-                {
-
-                    
+                {                   
                     margin-right: 0;
                     transition: all 1s;
 
@@ -198,4 +198,3 @@
             
     }
 }
-

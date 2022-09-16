@@ -1,7 +1,10 @@
 .menu {
-  background-color: white;
-  border-radius: 1rem 1rem;
-  margin: 2rem;
+  background-color: #f6f6f6;
+  padding: 1rem;
+  padding-bottom: 6rem;
+}
+.menu h2 {
+  font-size: 25px;
 }
 .menu a {
   text-decoration: none;
@@ -10,6 +13,7 @@
 .menu .menu__carte {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  background-color: #f6f6f6;
   /*flex-wrap: wrap;/*va a la ligne*/
   gap: 2rem;
 }
@@ -38,8 +42,8 @@
 }
 .menu .carte {
   border-radius: 1rem;
-  background-color: #f6f6f6;
-  box-shadow: 10px 5px 5px gray;
+  background-color: white;
+  box-shadow: 0px 4px 5px 4px lightgrey;
 }
 .menu .image__carte {
   height: 18rem;
@@ -60,6 +64,7 @@
   background-image: url(../OhMyFoodImage/resto-4.jpg);
 }
 .menu .description__image {
+  background-color: white;
   position: relative;
 }
 .menu .description__image i {
@@ -79,4 +84,7 @@
 .menu .description__image:hover .fas {
   opacity: 1;
   transform: translateY(-50%) scale(1.1);
+}
+.menu .txt-img {
+  padding-left: 18px;
 }/*# sourceMappingURL=menu.css.map */

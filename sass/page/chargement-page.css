@@ -50,10 +50,10 @@
   z-index: 1; /*superposition de cette page au dessus des autres*/
   background-color: white;
   opacity: 0.7;
-  -webkit-animation: loader 5s;
-          animation: loader 5s; /*animation de 3 secondes*/
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
+  -webkit-animation: loader 1s;
+          animation: loader 1s; /*animation de 3 secondes*/
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; /*pour que la page reste a son etat 
 transform-origin: top; /* la page disparait en haut*/

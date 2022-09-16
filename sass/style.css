@@ -10,15 +10,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/*main
-{
-    /*padding: 10px;*/
-header {
-  font-family: "Shrikhand", cursive;
-  text-align: center;
-  /*box-shadow: 0px 3px 3px grey;*/
-  box-shadow: 10px 5px 5px gray;
-  padding: 0.5rem;
+.header-page-one {
+  font-family: "Shrikhand", sans-serif;
+  text-align: left;
+  box-shadow: 0px 4px 5px 4px lightgrey;
+  padding: 6px;
   position: relative;
 }
 
@@ -27,34 +23,55 @@ main .rechercheville {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  background-color: #f3f3f3;
+  background-color: rgb(235, 230, 230);
 }
 
 .explore {
-  margin-top: 10px;
-  font-size: 1rem;
+  border: solid 1px transparent;
+  height: 350px;
+  font-size: 1.2rem;
   text-align: center;
+  background-color: #f6f6f6;
+}
+.explore h2 {
+  padding-top: 30px;
+}
+.explore p {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .explore button {
-  margin-top: 10px;
+  margin-top: 1.8rem;
+  margin-bottom: 3rem;
+  padding: 19px;
   color: white;
   text-align: center;
-  font-weight: 300;
-  font-size: 1.5rem;
+  font-weight: 450;
+  font-size: 1.4rem;
   border: none;
   background-image: linear-gradient(45deg, #9356DC, #FF79DA);
-  border-radius: 20px;
+  border-radius: 30px;
   transition: transform 200ms; /*zoom transition de 200ms pour effet*/
   /*box-shadow: 10px 5px 5px gray;*/
-  box-shadow: 10px 5px 5px gray;
+  box-shadow: 0px 4px 5px 4px lightgrey;
 }
 .explore button:hover {
   transform: scale(1.03); /*zoom de la souris*/
 }
 
+.fonctionnement h2 {
+  font-size: 25px;
+  padding-top: 3rem;
+  padding-left: 30px;
+  padding-bottom: 0px;
+}
 .fonctionnement ol {
   counter-reset: liste-critere; /*conteur*/
   display: flex;
+  padding-left: 30px;
+  padding-top: 0px;
+  padding-right: 40px;
+  padding-bottom: 40px;
   gap: 2rem;
 }
 @media (max-width: 1200px) {
@@ -66,10 +83,10 @@ main .rechercheville {
   position: relative;
   list-style-type: none;
   background-color: #f6f6f6;
-  padding: 1.5rem 2rem;
+  padding: 40px;
   flex-grow: 1; /* prendre toute la place*/
-  border-radius: 1rem;
-  box-shadow: 10px 5px 5px gray;
+  border-radius: 1.5rem;
+  box-shadow: 0px 4px 5px 4px lightgrey;
 }
 .fonctionnement li::before {
   content: counter(liste-critere);
@@ -77,8 +94,8 @@ main .rechercheville {
   color: #f6f6f6;
   background-color: #9356DC;
   border-radius: 50%;
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   display: grid;
   place-items: center;
   position: absolute;
@@ -94,15 +111,21 @@ main .rechercheville {
       color: $couleur-primaire;
   }*/
 }
+.fonctionnement li:hover i.fas {
+  color: #9356DC;
+}
 .fonctionnement li i.fas {
   color: gray;
   margin-right: 1rem;
 }
 
 .menu {
-  background-color: white;
-  border-radius: 1rem 1rem;
-  margin: 2rem;
+  background-color: #f6f6f6;
+  padding: 1rem;
+  padding-bottom: 6rem;
+}
+.menu h2 {
+  font-size: 25px;
 }
 .menu a {
   text-decoration: none;
@@ -111,6 +134,7 @@ main .rechercheville {
 .menu .menu__carte {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  background-color: #f6f6f6;
   /*flex-wrap: wrap;/*va a la ligne*/
   gap: 2rem;
 }
@@ -139,8 +163,8 @@ main .rechercheville {
 }
 .menu .carte {
   border-radius: 1rem;
-  background-color: #f6f6f6;
-  box-shadow: 10px 5px 5px gray;
+  background-color: white;
+  box-shadow: 0px 4px 5px 4px lightgrey;
 }
 .menu .image__carte {
   height: 18rem;
@@ -161,6 +185,7 @@ main .rechercheville {
   background-image: url(../OhMyFoodImage/resto-4.jpg);
 }
 .menu .description__image {
+  background-color: white;
   position: relative;
 }
 .menu .description__image i {
@@ -181,10 +206,15 @@ main .rechercheville {
   opacity: 1;
   transform: translateY(-50%) scale(1.1);
 }
+.menu .txt-img {
+  padding-left: 18px;
+}
 
 footer {
-  background-color: #353535;
-  padding: 0 2rem;
+  background-color: #494747;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
   color: white;
 }
 footer h2 {
@@ -197,6 +227,7 @@ footer i {
   padding-right: 1rem;
 }
 footer a {
+  color: white;
   text-decoration: none;
 }
 
@@ -243,6 +274,7 @@ footer a {
 }
 .Header-secondes-page {
   position: relative;
+  text-align: center;
 }
 .Header-secondes-page i {
   top: 5px;
@@ -340,7 +372,7 @@ footer a {
   color: black;
   margin-bottom: 10px;
   background-color: white;
-  box-shadow: 5px 5px 5px 5px gray;
+  box-shadow: 5px 5px 5px 5px lightgray;
   display: flex;
   justify-content: space-between;
   -webkit-animation: animation-card 1.5s;
@@ -448,10 +480,10 @@ footer a {
   z-index: 1; /*superposition de cette page au dessus des autres*/
   background-color: white;
   opacity: 0.7;
-  -webkit-animation: loader 5s;
-          animation: loader 5s; /*animation de 3 secondes*/
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
+  -webkit-animation: loader 1s;
+          animation: loader 1s; /*animation de 3 secondes*/
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; /*pour que la page reste a son etat 
 transform-origin: top; /* la page disparait en haut*/
