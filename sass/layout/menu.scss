@@ -38,7 +38,7 @@
             background-color: $couleur-terciaire;
             width: 7rem;
             height: 3rem;
-            size: 50%;
+            /*size: 50%;*/
             display: grid;/*centrer horizontal et vertical*/
             place-items: center;
             right: 1rem;
@@ -55,7 +55,7 @@
     {          
         height: 18rem;
         background-size: cover;
-        
+       
         border-radius: 1rem 1rem 0 0;
         /*background-image: url(../OhMyFoodImage/resto-1.jpg);*/               
     }  
@@ -67,14 +67,20 @@
         }
     }     
     .description__image
-    {        
+    {    
+        @media screen and (max-width:400px)
+        {
+            display: flex;
+            justify-content: space-between;
+            
+        }    
         background-color: white;
         position: relative;
         i
         {
             position: absolute;
             right: 1rem;
-            top: 50%;
+            top: 60%;
             transform: translateY(-50%);
         }
         .fas

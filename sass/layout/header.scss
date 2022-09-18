@@ -6,4 +6,9 @@
     @include ombre-base;
     padding: 6px;
     position:relative;
+    @media (max-width:1200px)
+    {
+        /*flex-direction: column;*/
+        text-align: center;
+    }
 }

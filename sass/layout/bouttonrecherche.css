@@ -1,9 +1,10 @@
 .explore {
   border: solid 1px transparent;
-  height: 200px;
+  padding-bottom: 2rem;
   font-size: 1.2rem;
   text-align: center;
   background-color: #f6f6f6;
+  /*border: solid 1px transparent;*/
 }
 .explore h2 {
   padding-top: 30px;

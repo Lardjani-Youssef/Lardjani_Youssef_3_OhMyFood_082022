@@ -70,8 +70,14 @@
   position: relative;
   border: solid 1px transparent;
 }
+@media screen and (max-width: 400px) {
+  .menu-one {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .menu-one h2 {
-  padding-left: 2rem;
+  padding-left: 1rem;
   padding-top: 2rem;
   font-family: "Shrikhand", "sans-serif";
   font-size: 2rem;
@@ -82,7 +88,7 @@
   position: absolute;
   right: 1rem;
   top: 50%;
-  padding-right: 2rem;
+  /*padding-right: 2rem;*/
   transform: translateY(-50%);
 }
 .menu-one .fas {
@@ -182,7 +188,7 @@
   display: grid;
   place-items: center;
   color: #99E2D0;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   width: 2rem;
   border-radius: 50%;
 }

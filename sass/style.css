@@ -17,6 +17,12 @@ body {
   padding: 6px;
   position: relative;
 }
+@media (max-width: 1200px) {
+  .header-page-one {
+    /*flex-direction: column;*/
+    text-align: center;
+  }
+}
 
 main .rechercheville {
   display: flex;
@@ -28,10 +34,11 @@ main .rechercheville {
 
 .explore {
   border: solid 1px transparent;
-  height: 200px;
+  padding-bottom: 2rem;
   font-size: 1.2rem;
   text-align: center;
   background-color: #f6f6f6;
+  /*border: solid 1px transparent;*/
 }
 .explore h2 {
   padding-top: 30px;
@@ -154,7 +161,7 @@ main .rechercheville {
   background-color: #99E2D0;
   width: 7rem;
   height: 3rem;
-  size: 50%;
+  /*size: 50%;*/
   display: grid; /*centrer horizontal et vertical*/
   place-items: center;
   right: 1rem;
@@ -187,10 +194,16 @@ main .rechercheville {
   background-color: white;
   position: relative;
 }
+@media screen and (max-width: 400px) {
+  .menu .description__image {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .menu .description__image i {
   position: absolute;
   right: 1rem;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
 }
 .menu .description__image .fas {
@@ -303,8 +316,14 @@ footer a {
   position: relative;
   border: solid 1px transparent;
 }
+@media screen and (max-width: 400px) {
+  .menu-one {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .menu-one h2 {
-  padding-left: 2rem;
+  padding-left: 1rem;
   padding-top: 2rem;
   font-family: "Shrikhand", "sans-serif";
   font-size: 2rem;
@@ -315,7 +334,7 @@ footer a {
   position: absolute;
   right: 1rem;
   top: 50%;
-  padding-right: 2rem;
+  /*padding-right: 2rem;*/
   transform: translateY(-50%);
 }
 .menu-one .fas {
@@ -415,7 +434,7 @@ footer a {
   display: grid;
   place-items: center;
   color: #99E2D0;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   width: 2rem;
   border-radius: 50%;
 }

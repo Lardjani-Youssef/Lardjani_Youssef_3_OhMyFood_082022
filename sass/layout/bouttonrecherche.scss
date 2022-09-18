@@ -2,6 +2,11 @@
 @import"../utils/variable-couleurs.scss";
 .explore
 {  
+    border: solid 1px transparent;
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+    text-align: center;   
+    background-color: $c-gris-claire;
     h2
     {
         padding-top: 30px;
@@ -11,11 +16,8 @@
         padding-left: 30px;
         padding-right: 30px;
     }
-    border: solid 1px transparent;
-    height: 200px;
-    font-size: 1.2rem;
-    text-align: center;   
-    background-color: $c-gris-claire;
+    /*border: solid 1px transparent;*/
+    
     & button
     {
         margin-top: 1.8rem;

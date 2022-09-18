@@ -34,7 +34,7 @@
   background-color: #99E2D0;
   width: 7rem;
   height: 3rem;
-  size: 50%;
+  /*size: 50%;*/
   display: grid; /*centrer horizontal et vertical*/
   place-items: center;
   right: 1rem;
@@ -67,10 +67,16 @@
   background-color: white;
   position: relative;
 }
+@media screen and (max-width: 400px) {
+  .menu .description__image {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .menu .description__image i {
   position: absolute;
   right: 1rem;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
 }
 .menu .description__image .fas {

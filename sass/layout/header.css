@@ -4,4 +4,10 @@
   box-shadow: 0px 4px 5px 4px lightgrey;
   padding: 6px;
   position: relative;
+}
+@media (max-width: 1200px) {
+  .header-page-one {
+    /*flex-direction: column;*/
+    text-align: center;
+  }
 }/*# sourceMappingURL=header.css.map */
