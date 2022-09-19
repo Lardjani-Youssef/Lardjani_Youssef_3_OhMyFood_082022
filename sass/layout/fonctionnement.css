@@ -1,15 +1,18 @@
 .fonctionnement h2 {
-  font-size: 25px;
-  padding-top: 5rem;
+  font-size: 30px;
+  padding-top: 2rem;
   padding-left: 30px;
+  padding-bottom: 1.8rem;
 }
 .fonctionnement ol {
+  font-size: 18px;
+  font-weight: bold;
   counter-reset: liste-critere; /*conteur*/
   display: flex;
   padding-left: 30px;
   padding-top: 0px;
   padding-right: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 64px;
   gap: 2rem;
 }
 @media (max-width: 1200px) {
@@ -19,11 +22,14 @@
 }
 .fonctionnement li {
   position: relative;
+  display: flex;
+  align-items: center;
   list-style-type: none;
   background-color: #f6f6f6;
-  padding: 40px;
+  padding: 33px;
   flex-grow: 1; /* prendre toute la place*/
   border-radius: 1.5rem;
+  padding-left: 4rem;
   box-shadow: 0px 4px 5px 4px lightgrey;
 }
 .fonctionnement li::before {
@@ -43,16 +49,11 @@
 }
 .fonctionnement li:hover {
   transform: scale(1.02);
-  /*&:hover
-  {
-      cursor: pointer;
-      color: $couleur-primaire;
-  }*/
 }
 .fonctionnement li:hover i.fas {
   color: #9356DC;
 }
 .fonctionnement li i.fas {
   color: gray;
-  margin-right: 1rem;
+  margin-right: 2rem;
 }/*# sourceMappingURL=fonctionnement.css.map */

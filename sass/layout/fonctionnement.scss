@@ -5,18 +5,21 @@
 {
     h2
     {
-        font-size: 25px;
-        padding-top: 5rem;
+        font-size: 30px;
+        padding-top: 2rem;
         padding-left: 30px;
+        padding-bottom: 1.8rem;
     }
     & ol
     {
+        font-size: 18px;
+        font-weight: bold;
         counter-reset: liste-critere;/*conteur*/
         display: flex;
         padding-left: 30px;
         padding-top: 0px;
         padding-right: 40px;
-        padding-bottom: 40px;
+        padding-bottom: 64px;
         gap: 2rem;
         @media (max-width:1200px)
         {
@@ -25,6 +28,8 @@
     }
     & li{
         position: relative;
+        display: flex;
+        align-items: center;
         &::before/* before du conteur*/
         {
             content:counter(liste-critere);
@@ -43,18 +48,15 @@
         }
         list-style-type: none;
         background-color: #f6f6f6;
-        padding: 40px;      
+        padding: 33px;      
         flex-grow: 1; /* prendre toute la place*/
-        border-radius: 1.5rem;     
+        border-radius: 1.5rem;  
+        padding-left: 4rem;   
         @include ombre-base;
         &:hover
         {
             @include zoom-leger;
-            /*&:hover
-            {
-                cursor: pointer;
-                color: $couleur-primaire;
-            }*/
+        
             & i.fas
             {
                 color:$couleur-primaire;
@@ -64,7 +66,7 @@
         & i.fas
         {
             color:gray;
-            margin-right: 1rem;          
+            margin-right: 2rem;          
         }
     }       
 }

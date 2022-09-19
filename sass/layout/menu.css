@@ -4,7 +4,9 @@
   padding-bottom: 4rem;
 }
 .menu h2 {
-  font-size: 25px;
+  font-size: 30px;
+  padding-top: 1rem;
+  padding-bottom: 0.7rem;
 }
 .menu a {
   text-decoration: none;
@@ -19,7 +21,6 @@
 }
 @media (max-width: 1200px) {
   .menu .menu__carte {
-    /*flex-direction: column;*/
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -64,8 +65,12 @@
   background-image: url(../OhMyFoodImage/resto-4.jpg);
 }
 .menu .description__image {
+  margin-top: -30px;
   background-color: white;
   position: relative;
+}
+.menu .description__image p {
+  font-size: 22px;
 }
 @media screen and (max-width: 400px) {
   .menu .description__image {
@@ -75,8 +80,8 @@
 }
 .menu .description__image i {
   position: absolute;
-  right: 1rem;
-  top: 60%;
+  right: 0.8rem;
+  top: 45%;
   transform: translateY(-50%);
 }
 .menu .description__image .fas {

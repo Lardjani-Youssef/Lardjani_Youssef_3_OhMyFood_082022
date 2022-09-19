@@ -67,17 +67,20 @@ main .rechercheville {
 }
 
 .fonctionnement h2 {
-  font-size: 25px;
-  padding-top: 5rem;
+  font-size: 30px;
+  padding-top: 2rem;
   padding-left: 30px;
+  padding-bottom: 1.8rem;
 }
 .fonctionnement ol {
+  font-size: 18px;
+  font-weight: bold;
   counter-reset: liste-critere; /*conteur*/
   display: flex;
   padding-left: 30px;
   padding-top: 0px;
   padding-right: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 64px;
   gap: 2rem;
 }
 @media (max-width: 1200px) {
@@ -87,11 +90,14 @@ main .rechercheville {
 }
 .fonctionnement li {
   position: relative;
+  display: flex;
+  align-items: center;
   list-style-type: none;
   background-color: #f6f6f6;
-  padding: 40px;
+  padding: 33px;
   flex-grow: 1; /* prendre toute la place*/
   border-radius: 1.5rem;
+  padding-left: 4rem;
   box-shadow: 0px 4px 5px 4px lightgrey;
 }
 .fonctionnement li::before {
@@ -111,18 +117,13 @@ main .rechercheville {
 }
 .fonctionnement li:hover {
   transform: scale(1.02);
-  /*&:hover
-  {
-      cursor: pointer;
-      color: $couleur-primaire;
-  }*/
 }
 .fonctionnement li:hover i.fas {
   color: #9356DC;
 }
 .fonctionnement li i.fas {
   color: gray;
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 
 .menu {
@@ -131,7 +132,9 @@ main .rechercheville {
   padding-bottom: 4rem;
 }
 .menu h2 {
-  font-size: 25px;
+  font-size: 30px;
+  padding-top: 1rem;
+  padding-bottom: 0.7rem;
 }
 .menu a {
   text-decoration: none;
@@ -146,7 +149,6 @@ main .rechercheville {
 }
 @media (max-width: 1200px) {
   .menu .menu__carte {
-    /*flex-direction: column;*/
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -191,8 +193,12 @@ main .rechercheville {
   background-image: url(../OhMyFoodImage/resto-4.jpg);
 }
 .menu .description__image {
+  margin-top: -30px;
   background-color: white;
   position: relative;
+}
+.menu .description__image p {
+  font-size: 22px;
 }
 @media screen and (max-width: 400px) {
   .menu .description__image {
@@ -202,8 +208,8 @@ main .rechercheville {
 }
 .menu .description__image i {
   position: absolute;
-  right: 1rem;
-  top: 60%;
+  right: 0.8rem;
+  top: 45%;
   transform: translateY(-50%);
 }
 .menu .description__image .fas {
@@ -224,9 +230,9 @@ main .rechercheville {
 
 footer {
   background-color: #494747;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-bottom: 20px;
+  padding-top: 28px;
+  padding-left: 31px;
+  padding-bottom: 28px;
   color: white;
 }
 footer h2 {
@@ -234,6 +240,7 @@ footer h2 {
 }
 footer p {
   padding: 0.2rem;
+  font-size: 18px;
 }
 footer i {
   padding-right: 1rem;

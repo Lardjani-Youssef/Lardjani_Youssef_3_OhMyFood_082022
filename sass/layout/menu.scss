@@ -7,7 +7,9 @@
     padding-bottom: 4rem;
     h2
     {
-        font-size: 25px;
+        font-size: 30px;
+        padding-top: 1rem;
+        padding-bottom: 0.7rem;
     }   
     a{
         text-decoration: none;
@@ -22,7 +24,6 @@
         gap: 2rem;
         @media (max-width:1200px)
         {
-            /*flex-direction: column;*/
             grid-template-columns:repeat(1, 1fr);
         }
         .nouveau
@@ -67,7 +68,13 @@
         }
     }     
     .description__image
-    {    
+    {   
+        p
+        {
+            font-size: 22px;
+        }
+        
+        margin-top: -30px;
         @media screen and (max-width:400px)
         {
             display: flex;
@@ -79,8 +86,8 @@
         i
         {
             position: absolute;
-            right: 1rem;
-            top: 60%;
+            right: 0.8rem;
+            top: 45%;
             transform: translateY(-50%);
         }
         .fas
