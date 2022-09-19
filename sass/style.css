@@ -17,9 +17,11 @@ body {
   padding: 6px;
   position: relative;
 }
+.header-page-one h1 {
+  padding-left: 2rem;
+}
 @media (max-width: 1200px) {
   .header-page-one {
-    /*flex-direction: column;*/
     text-align: center;
   }
 }
