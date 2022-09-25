@@ -108,7 +108,11 @@
             {
                 overflow: hidden;
                 white-space:nowrap;
-                text-overflow: ellipsis;
+                h4 p 
+                {
+                    text-overflow: ellipsis;
+                }
+                
             }
             .card_2
             {

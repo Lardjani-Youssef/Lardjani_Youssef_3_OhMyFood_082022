@@ -390,6 +390,8 @@ footer a {
 .main_typemenu .carte_x9 .typemenu .Card_body2 {
   overflow: hidden;
   white-space: nowrap;
+}
+.main_typemenu .carte_x9 .typemenu .Card_body2 h4 p {
   text-overflow: ellipsis;
 }
 .main_typemenu .carte_x9 .typemenu .card_2 {
