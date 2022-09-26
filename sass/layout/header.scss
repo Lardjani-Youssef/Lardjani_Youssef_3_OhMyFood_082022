@@ -1,16 +1,13 @@
 @import"../utils/ombre.scss";
 .header-page-one
 {
-    h1{
-        padding-left: 2rem;
-    }
+   
     font-family: "Shrikhand", sans-serif;
     text-align: left;
     @include ombre-base;
     padding: 6px;
     position:relative;
-    @media (max-width:1200px)
-    {
-        text-align: center;
-    }
+    font-size:large;
+    text-align: center;
+    
 }

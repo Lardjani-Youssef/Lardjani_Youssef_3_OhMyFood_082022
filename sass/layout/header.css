@@ -4,12 +4,6 @@
   box-shadow: 0px 4px 5px 4px lightgrey;
   padding: 6px;
   position: relative;
-}
-.header-page-one h1 {
-  padding-left: 2rem;
-}
-@media (max-width: 1200px) {
-  .header-page-one {
-    text-align: center;
-  }
+  font-size: large;
+  text-align: center;
 }/*# sourceMappingURL=header.css.map */

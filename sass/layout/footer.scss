@@ -5,6 +5,15 @@ footer
     padding-left: 31px;
     padding-bottom: 28px;
     color: white;
+    @media (min-width:1200px)
+    {    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-left: 120px;
+        padding-right: 120px;
+
+    }
 
     h2{
         font-family: "shrikhand" , "sans-sherif";
