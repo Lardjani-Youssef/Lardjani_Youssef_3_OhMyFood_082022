@@ -11,9 +11,8 @@ body {
 
 .header-page-one {
   font-family: "Shrikhand", sans-serif;
-  text-align: left;
   box-shadow: 0px 4px 5px 4px lightgrey;
-  padding: 6px;
+  padding: 2px;
   position: relative;
   font-size: large;
   text-align: center;
@@ -112,6 +111,7 @@ main .rechercheville {
 }
 .fonctionnement li:hover {
   transform: scale(1.02);
+  background-color: rgb(243, 234, 243);
 }
 .fonctionnement li:hover i.fas {
   color: #9356DC;
@@ -124,16 +124,19 @@ main .rechercheville {
 .menu {
   background-color: #f6f6f6;
   padding: 2rem;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
 }
 .menu h2 {
   font-size: 30px;
   padding-top: 1rem;
-  padding-bottom: 0.7rem;
+  padding-bottom: 0.5rem;
 }
 .menu a {
   text-decoration: none;
   color: black;
+}
+.menu a:hover {
+  transform: scale(1.02);
 }
 .menu .menu__carte {
   display: grid;
@@ -172,23 +175,24 @@ main .rechercheville {
 .menu .image__carte {
   height: 18rem;
   background-size: cover;
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 1rem 1rem 0rem 0rem;
   /*background-image: url(../OhMyFoodImage/resto-1.jpg);*/
 }
 .menu .image__carte-1 {
-  background-image: url(../OhMyFoodImage/resto-1.jpg);
+  background-image: url(./OhMyFoodImage/resto-1.jpg);
 }
 .menu .image__carte-2 {
-  background-image: url(../OhMyFoodImage/resto-2.jpg);
+  background-image: url(./OhMyFoodImage/resto-2.jpg);
 }
 .menu .image__carte-3 {
-  background-image: url(../OhMyFoodImage/resto-3.jpg);
+  background-image: url(./OhMyFoodImage/resto-3.jpg);
 }
 .menu .image__carte-4 {
-  background-image: url(../OhMyFoodImage/resto-4.jpg);
+  background-image: url(./OhMyFoodImage/resto-4.jpg);
 }
 .menu .description__image {
-  margin-top: -30px;
+  margin-top: -120px;
+  border-radius: 0 0 1rem 1rem;
   background-color: white;
   position: relative;
 }
@@ -201,13 +205,13 @@ main .rechercheville {
     justify-content: space-between;
   }
 }
-.menu .description__image i {
+.menu .description__image .icone_coeur i {
   position: absolute;
   right: 0.8rem;
   top: 45%;
   transform: translateY(-50%);
 }
-.menu .description__image .fas {
+.menu .description__image .icone_coeur .fas {
   color: transparent;
   background-image: linear-gradient(45deg, #9356DC, #FF79DA);
   background-clip: text;
@@ -215,7 +219,7 @@ main .rechercheville {
   opacity: 0;
   transition: all 250ms;
 }
-.menu .description__image:hover .fas {
+.menu .description__image .icone_coeur:hover .fas {
   opacity: 1;
   transform: translateY(-50%) scale(1.1);
 }
@@ -232,6 +236,13 @@ footer {
 }
 @media (min-width: 1200px) {
   footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer #ohmyfood-footer {
+    text-align: center;
+  }
+  footer #balise-p-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -299,9 +310,11 @@ footer a {
   font-family: "Shrikhand", sans-serif;
   position: relative;
   text-align: center;
+  font-size: large;
+  padding: 2px;
 }
 .Header-secondes-page i {
-  top: 5px;
+  top: 28px;
   left: 28px;
   position: absolute;
   color: black;
@@ -340,7 +353,7 @@ footer a {
   font-size: 2rem;
   padding-right: 1rem;
 }
-.menu-one i {
+.menu-one .icone_coeur i {
   padding-top: 2rem;
   position: absolute;
   right: 1rem;
@@ -348,7 +361,7 @@ footer a {
   /*padding-right: 2rem;*/
   transform: translateY(-50%);
 }
-.menu-one .fas {
+.menu-one .icone_coeur .fas {
   color: transparent;
   background-image: linear-gradient(45deg, #9356DC, #FF79DA);
   background-clip: text;
@@ -356,7 +369,7 @@ footer a {
   opacity: 0;
   transition: all 250ms;
 }
-.menu-one:hover .fas {
+.menu-one .icone_coeur:hover .fas {
   opacity: 1;
   transform: translateY(-50%) scale(1.1);
 }
@@ -525,4 +538,4 @@ transform-origin: top; /* la page disparait en haut*/
 }
 .page-rechargement i {
   color: #9356DC;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */

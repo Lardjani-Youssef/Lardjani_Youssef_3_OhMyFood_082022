@@ -1,17 +1,25 @@
 @import"../utils/ombre.scss";
+@import"../utils/zoom.scss";
 @import"../utils/variable-couleurs.scss";
+@import"../utils/coeur-color.scss";
+
 .menu
 {
     background-color: $c-gris-claire;   
     padding: 2rem;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
     h2
     {
         font-size: 30px;
         padding-top: 1rem;
-        padding-bottom: 0.7rem;
+        padding-bottom: 0.5rem;
     }   
-    a{
+    a
+    {
+        &:hover
+        {
+            @include zoom-leger;
+        }  
         text-decoration: none;
         color: black;
     }
@@ -55,16 +63,18 @@
     & .image__carte
     {          
         height: 18rem;
-        background-size: cover;
-       
-        border-radius: 1rem 1rem 0 0;
+        background-size: cover; 
+        
+            
+        border-radius: 1rem 1rem 0rem 0rem;
         /*background-image: url(../OhMyFoodImage/resto-1.jpg);*/               
     }  
     @for $i from 1 through 4
     {
         .image__carte-#{$i}
         {
-            background-image: url(../OhMyFoodImage/resto-#{$i}.jpg);
+            background-image: url(./OhMyFoodImage/resto-#{$i}.jpg); 
+                  
         }
     }     
     .description__image
@@ -74,7 +84,8 @@
             font-size: 22px;
         }
         
-        margin-top: -30px;
+        margin-top: -120px;
+        border-radius: 0 0 1rem 1rem;
         @media screen and (max-width:400px)
         {
             display: flex;
@@ -83,27 +94,12 @@
         }    
         background-color: white;
         position: relative;
-        i
+        
+        .icone_coeur
         {
-            position: absolute;
-            right: 0.8rem;
-            top: 45%;
-            transform: translateY(-50%);
+            @include coeur-color;
         }
-        .fas
-        {
-            color: transparent;
-            background-image: linear-gradient(45deg, #9356DC, #FF79DA);
-            background-clip: text;
-            -webkit-background-clip: text;
-            opacity: 0;
-            transition: all 250ms;
-        }
-        &:hover .fas
-        {
-            opacity: 1;
-            transform: translateY(-50%) scale(1.1);           
-        }
+        
     }   
     .txt-img
     {
